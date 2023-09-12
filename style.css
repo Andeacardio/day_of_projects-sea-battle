@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-image: url("boat-5159224_1280.jpg");
+  background-size: cover;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(244, 239, 248, 0.39);
+}
+.header-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+h1 {
+  color: rgb(0, 119, 255);
+  font-size: 34px;
+}
+.mute-box {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.mute-box img {
+  width: 20px;
+}
+.mute-gray {
+  background-color: rgba(94, 91, 91, 0.884);
+}
+@media (max-width: 530px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 35px;
+  }
+  .box1 {
+    height: 200px;
+    padding-left: 20px;
+    margin-bottom: -10px;
+  }
+  .box2 {
+    height: 200px;
+    margin-top: 10px;
+  }
+}
+.box1 {
+  height: 300px;
+}
+.players-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(10, 42, 226);
+  margin-left: 10px;
+}
+.box1 p {
+  margin: 10px 0;
+}
+.box1-main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+  margin-right: 20px;
+  border: 2px solid rgb(77, 177, 115);
+  background-color: rgba(141, 228, 199, 0.596);
+}
+.box2 {
+  margin-top: 93px;
+  height: 300px;
+}
+.box2 p {
+  margin-bottom: 10px;
+}
+.box2-main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 260px;
+
+  border: 2px solid rgb(77, 77, 177);
+  background-color: rgba(119, 163, 230, 0.685);
+}
+.player2-points p {
+  margin-top: 10px;
+}
+.box1-box {
+  width: 35px;
+  height: 35px;
+  border: 1px solid rgb(61, 60, 60);
+  font-size: 12px;
+  color: rgb(109, 107, 107);
+  position: relative;
+  cursor: pointer;
+}
+
+.green {
+  background-color: rgb(4, 90, 8);
+}
+.green::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(8, 48, 3);
+  border-radius: 50%;
+  left: 39%;
+  top: 29%;
+}
+.gray {
+  background-color: rgb(158, 153, 153);
+}
+.gray::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(5, 22, 68);
+  border-radius: 50%;
+  left: 39%;
+  top: 29%;
+}
+.pop-up {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.445);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-pop-up {
+  padding: 15px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  border-radius: 10px;
+  background-color: rgb(157, 206, 248);
+}
+.box-pop-up_top {
+  color: rgb(4, 77, 77);
+  font-size: 25px;
+}
+.box-pop-up_button {
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(4, 99, 99);
+  color: aliceblue;
+  transition: 0.35s;
+  cursor: pointer;
+}
+.box-pop-up_button:hover {
+  background-color: rgb(9, 153, 153);
+  transition: 0.35s;
+}
+.player2-points,
+.player1-points {
+  color: blue;
+  margin-left: 10px;
+}
+.hidden {
+  display: none;
+}
